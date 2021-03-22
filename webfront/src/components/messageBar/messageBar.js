@@ -9,7 +9,7 @@ const MessageBar = ({messages}) => {
         const user = "user2";
         const message_components = messages.map((message,id) => <Message key={id} message={message} isYours={message.from===user} />);
         return( 
-                <Grid item className="d-flex p-0 MessageBar" md={8}>
+                <Grid item className="MessageBar" md={8}>
                         <div className="messages__container">
                                 {message_components}
                         </div>

@@ -9,8 +9,10 @@ const Message = ({message, isYours}) => {
         return (
             <div className="message__container message__right">
                 <div className="message__details">
-                    You<br />
-                    {message.time}<br />
+                    <div className="message__extras">
+                        You<br />
+                        {message.time}<br />
+                    </div>
                     {message.message}
                 </div>
                 <div className="message__avatar">
@@ -26,8 +28,10 @@ const Message = ({message, isYours}) => {
                     <Avatar alt={message.from.slice(0,1)} src="/static/images/avatar/1.jpg" />
                 </div>
                 <div className="message__details">
-                    {message.from}<br />
-                    {message.time}<br />
+                    <div className="message__extras">
+                        {message.from}<br />
+                        {message.time}<br />
+                    </div>
                     {message.message}
                 </div>
             </div>
