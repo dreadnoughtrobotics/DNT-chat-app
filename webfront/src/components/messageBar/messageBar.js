@@ -1,13 +1,18 @@
 import React from 'react';
-import MessageInput from './MessageInput/MessageInput.js';
 import Grid from '@material-ui/core/Grid';
+import MessageInput from '../MessageInput/MessageInput.js';
+import Message from '../Messsage/Message';
 
 import './MessageBar.css';
 
-const MessageBar = () => {
+const MessageBar = ({messages}) => {
+        const user = "user2";
+        const message_components = messages.map((message,id) => <Message key={id} message={message} isYours={message.from===user} />);
         return( 
                 <Grid item className="d-flex p-0 MessageBar" md={8}>
-                        <span className="mb-auto mx-auto"> Messages </span>
+                        <div className="messages__container">
+                                {message_components}
+                        </div>
                         <MessageInput />
                 </Grid>
         );

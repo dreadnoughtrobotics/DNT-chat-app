@@ -4,6 +4,8 @@ import MessageBar from '../../components/MessageBar/MessageBar';
 import StatusBar from '../../components/StatusBar/StatusBar';
 import Grid from '@material-ui/core/Grid';
 
+import message from '../../datas/messages.json';
+
 import './MainPage.css';
 
 const MainPage = () => {
@@ -11,7 +13,7 @@ const MainPage = () => {
         <div className="main__container">
             <Grid container className="bar">
                 <LeftBar />
-                <MessageBar />
+                <MessageBar messages={message.messages} />
                 <StatusBar />
             </Grid>
         </div>
