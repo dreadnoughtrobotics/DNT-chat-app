@@ -1,0 +1,10 @@
+.sticky-stretch {
+    position: fixed;
+    width:66.667%;
+    bottom: 1px;
+}
+.form-control{
+    color:white !important;
+    background-color: #272c38 !important;
+    border: none !important;
+ }

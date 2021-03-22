@@ -13,6 +13,22 @@
   }
 }
 
+.bar {
+    height: 100%; 
+}
+
+.LeftBar {
+        background-color: #2e3440;
+}
+
+.MessageBar {
+    background-color: #3B4252;
+}
+
+.StatusBar {
+    background-color: #434C5E;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
