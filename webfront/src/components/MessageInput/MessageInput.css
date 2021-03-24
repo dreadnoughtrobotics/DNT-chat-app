@@ -1,0 +1,40 @@
+.stick {
+    position: fixed;
+    bottom: 10;
+    height : 40px;
+    width: calc(66.5% - 10px);
+    margin : 0 5px;
+}
+
+.input__container {
+    background-color: #505A72;
+}
+
+.input__container .MuiInputBase-root * {
+    border: none !important;
+}
+
+#message{
+    color:white !important;
+    background-color: #505A72 !important;
+    border-radius: 5px;
+}
+
+#button{
+    color : white;
+    background-color: #505A72;
+    height : 40px;
+    width : 40px;
+}
+
+.stick-trans {
+    transform: translateY(-300px);
+}
+
+aside.emoji-picker-react {
+    transform: translateY(-10px);
+    margin-left: auto;
+    box-shadow: none;
+    height: 300px;
+    width: 400px;
+}

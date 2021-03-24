@@ -1,13 +1,20 @@
-.sticky-stretch {
-    position: fixed;
-    width:66.667%;
-    bottom: 1px;
-}
 .form-control{
     color:white !important;
     background-color: #272c38 !important;
     border: none !important;
  }
+
 .MessageBar {
     background-color: #3B4252;
+}
+
+.messages__container {
+    height: calc(100vh - 45px);
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.messages__container::-webkit-scrollbar{
+    display: none;
 }
